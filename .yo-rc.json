@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "My Code Sucks ...",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "stoe",
+    "githubRepository": "my-code-sucks"
+  }
+}

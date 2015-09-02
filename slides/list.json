@@ -1,0 +1,152 @@
+[
+    {
+        "filename": "sencha-inc.html",
+        "attr":     {
+            "data-state":                 "sencha",
+            "data-background":            "resources/sencha.png",
+            "data-background-transition": "zoom"
+        }
+    },
+    {
+        "filename": "index.html",
+        "attr":     {
+            "data-state": "index"
+        }
+    },
+    {
+        "filename": "me.html",
+        "attr":     {
+            "data-state":      "me",
+            "data-background": "resources/me.jpg"
+        }
+    },
+    {
+        "filename": "damaian-conway.html",
+        "attr":     {
+            "data-state":                 "damaian-conway",
+            "data-background":            "resources/bg/shining.gif",
+            "data-background-transition": "zoom"
+        }
+    },
+    [
+        {
+            "filename": "examples/index.html",
+            "attr":     {
+                "data-state":      "examples",
+                "data-background": ""
+            }
+        },
+        {
+            "filename": "examples/bad-example-1.html",
+            "attr":     {
+                "data-state":      "examples",
+                "data-background": "js"
+            }
+        },
+        {
+            "filename": "examples/good-example-1.html",
+            "attr":     {
+                "data-state":      "examples",
+                "data-background": "js"
+            }
+        },
+        {
+            "filename": "examples/bad-example-2.html",
+            "attr":     {
+                "data-state":      "examples",
+                "data-background": "js"
+            }
+        },
+        {
+            "filename": "examples/good-example-2.html",
+            "attr":     {
+                "data-state":      "examples",
+                "data-background": "js"
+            }
+        }
+    ],
+    [
+        {
+            "filename": "code-style-guides/index.html",
+            "attr":     {
+                "data-state":      "codestyle",
+                "data-background": ""
+            }
+        },
+        {
+            "filename": "code-style-guides/tools.html",
+            "attr":     {
+                "data-state":      "codestyle",
+                "data-background": ""
+            }
+        },
+        {
+            "filename": "code-style-guides/jslint.html",
+            "attr":     {
+                "data-state":                 "codestyle",
+                "data-background":            "resources/codestyle/jslint.png",
+                "data-background-transition": "zoom"
+            }
+        },
+        {
+            "filename": "code-style-guides/jshint.html",
+            "attr":     {
+                "data-state":                 "codestyle",
+                "data-background":            "resources/codestyle/jshint.png",
+                "data-background-transition": "zoom"
+            }
+        },
+        {
+            "filename": "code-style-guides/jscs.html",
+            "attr":     {
+                "data-state":                 "codestyle",
+                "data-background":            "resources/codestyle/jscs.png",
+                "data-background-transition": "zoom"
+            }
+        },
+        {
+            "filename": "code-style-guides/eslint.html",
+            "attr":     {
+                "data-state":                 "codestyle",
+                "data-background":            "resources/codestyle/eslint.png",
+                "data-background-transition": "zoom"
+            }
+        }
+    ],
+    {
+        "filename": "dry.html",
+        "attr":     {
+            "data-state":      "dry",
+            "data-background": ""
+        }
+    },
+    {
+        "filename": "kiss.html",
+        "attr":     {
+            "data-state":      "kiss",
+            "data-background": ""
+        }
+    },
+    {
+        "filename": "q-a.html",
+        "attr":     {
+            "data-state":      "qa",
+            "data-background": ""
+        }
+    },
+    {
+        "filename": "thank-you.html",
+        "attr":     {
+            "data-state":      "thanks",
+            "data-background": ""
+        }
+    },
+    {
+        "filename": "sencha-inc.html",
+        "attr":     {
+            "data-state":                 "sencha",
+            "data-background":            "resources/sencha.png",
+            "data-background-transition": "zoom"
+        }
+    }
+]

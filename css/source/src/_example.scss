@@ -1,0 +1,12 @@
+.examples {
+    .slide-background[data-background-hash*='js']:after {
+        position   : absolute;
+        top        : 16px;
+        right      : 16px;
+        width      : 96px;
+        height     : 96px;
+        content    : '';
+        background : transparent url('../resources/js.png') center center no-repeat;
+        opacity    : 0.16;
+    }
+}

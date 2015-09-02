@@ -1,0 +1,15 @@
+<pre><code data-trim class="javascript hljs">
+for (var i = 1; i <= 20000; i++) {
+    $('.loremipsum').html(i);
+    $('.loremipsum').width(parseInt(i / 20000 * 100, 10) + '%'); 
+}
+</code></pre>
+
+<pre class="fragment"><code data-trim class="javascript hljs">
+    // $('.loremipsum') is called 40,000 (= 2 * 20,000) times
+</code></pre>
+
+
+<aside class="notes">
+    // TODO
+</aside>

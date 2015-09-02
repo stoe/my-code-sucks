@@ -1,0 +1,40 @@
+.me {
+    .reveal.center .slides section {
+        height     : 326px;
+        top        : 50% !important;
+        margin-top : -163px;
+    }
+
+    h2 {
+        font-size : 80%;
+    }
+
+    h3 {
+        font-size      : 64%;
+        font-weight    : 100;
+        text-transform : inherit;
+    }
+
+}
+
+ul.contact {
+    font-size : 48%;
+
+    a {
+        color       : inherit;
+        font-weight : 100;
+
+        // reset from _base.scss
+        &[href^=http], &[href^=https] {
+            &:after {
+                content : none;
+                padding : 0;
+            }
+        }
+
+        &:hover {
+            color   : $light-blue;
+            opacity : 1;
+        }
+    }
+}

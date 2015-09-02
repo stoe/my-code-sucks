@@ -1,0 +1,59 @@
+.codestyle {
+    ul {
+        margin        : 0 4px;
+        border-radius : 0;
+        width         : 96%;
+
+        &.pros, &.cons {
+            font-size   : 32px;
+            font-weight : 100;
+
+            li:first-child {
+                background-color : transparent;
+                font-weight      : 900;
+                text-shadow      : 1px 1px 1px $black, 3px 3px 5px $dark;
+            }
+        }
+
+        &.pros li {
+            background-color : rgba($light-green, .48);
+
+            &:first-child {
+                color : $light-green;
+            }
+        }
+
+        &.cons li {
+            background-color : rgba($red, .48);
+
+            &:first-child {
+                color : $red;
+            }
+        }
+
+        li {
+            padding : 4px 8px;
+            margin  : 4px 0;
+
+            &:first-child, &:last-child {
+                border-radius : 0;
+            }
+        }
+    }
+}
+
+.slide-background[data-background-hash] {
+
+    &[style*='resources/codestyle'] {
+        background-position : 0 0;
+        background-color    : rgba($black, 0.88);
+    }
+
+    &[style*='resources/codestyle/jscs'] {
+        background-position : 50% 0;
+    }
+
+    &[style*='resources/codestyle/jshint'] {
+        background-color : rgba($black, 0.48);
+    }
+}

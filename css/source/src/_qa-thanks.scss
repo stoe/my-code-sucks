@@ -1,0 +1,30 @@
+.qa, .thanks {
+
+    footer.caption {
+        text-align : center;
+
+        ul {
+            li {
+                padding : 0 16px;
+
+                a {
+                    color       : inherit;
+                    font-weight : 100;
+
+                    // reset from _base.scss
+                    &[href^=http], &[href^=https] {
+                        &:after {
+                            content : none;
+                            padding : 0;
+                        }
+                    }
+
+                    &:hover {
+                        color   : $light-blue;
+                        opacity : 1;
+                    }
+                }
+            }
+        }
+    }
+}

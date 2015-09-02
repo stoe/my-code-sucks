@@ -1,0 +1,107 @@
+h1, h2, h3, h4, h5, h6, p, blockquote {
+    text-shadow : 1px 1px 1px $black, 3px 3px 5px $dark;
+}
+
+h1, h2 {
+    font-weight : 900;
+}
+
+h3, h4, h5, h6 {
+    font-weight : 100;
+}
+
+p {
+    font-weight : 400;
+}
+
+a {
+    &[href^=http], &[href^=https] {
+        &:after {
+            font-family        : 'FontAwesome';
+            content            : '\f08e';
+            padding            : 0 5px;
+            opacity            : 0;
+            -webkit-transition : opacity 0.25s ease;
+            -moz-transition    : opacity 0.25s ease;
+            transition         : opacity 0.25s ease;
+        }
+
+        &:hover:after {
+            opacity : 1;
+        }
+    }
+}
+
+section img {
+    border     : none;
+    background : none;
+    box-shadow : none;
+}
+
+blockquote {
+    border           : none;
+    background-color : transparent;
+    box-shadow       : none;
+}
+
+pre, code {
+    background-color : transparent;
+    border           : none;
+    box-shadow       : none;
+}
+
+pre code {
+    padding          : 0 8px;
+    margin           : 8px 0;
+    font             : 100 normal normal 0.8em/1em 'Anonymous Pro' monospace;
+    border           : none;
+    background-color : rgba($black, 0);
+}
+
+footer.caption {
+    width      : 100%;
+    position   : absolute;
+    bottom     : -24px;
+    right      : 0;
+    font       : 100 normal normal 18px/24px 'Roboto', monospace;
+    color      : $dark-medium;
+    opacity    : 0.64;
+    text-align : right;
+}
+
+.dark {
+    color : $dark !important;
+}
+
+.dark-medium {
+    color : $dark-medium !important;
+}
+
+.fade {
+    opacity : 0.48;
+}
+
+.light {
+    font-weight : 100 !important;
+}
+
+.medium {
+    font-weight : 400 !important;
+}
+
+.heavy {
+    font-weight : 900 !important;
+}
+
+.highlight {
+    color : $pink;
+}
+
+.fa-ul.none {
+    list-style-type : none !important;
+}
+
+.slide-background[data-background-hash] {
+    background-blend-mode : multiply;
+    background-color      : rgba($black, 0.64);
+}

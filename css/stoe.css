@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900|Anonymous+Pro);
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: #424242; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #212121;
+  background-color: #212121; }
+
+.reveal {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: #FFFFFF; }
+
+::selection {
+  color: #fff;
+  background: #9ce1fe;
+  text-shadow: none; }
+
+.reveal .slides > section, .reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  margin: 0 0 20px 0;
+  color: #FAFAFA;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: 2.5em; }
+
+.reveal h2 {
+  font-size: 1.6em; }
+
+.reveal h3 {
+  font-size: 1.3em; }
+
+.reveal h4 {
+  font-size: 1em; }
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img, .reveal video, .reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong, .reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol, .reveal dl, .reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc; }
+
+.reveal ul ul {
+  list-style-type: square; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
+  display: block;
+  margin-left: 40px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal q, .reveal blockquote {
+  quotes: none; }
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+
+.reveal blockquote p:first-child, .reveal blockquote p:last-child {
+  display: inline-block; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th, .reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"], .reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"], .reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #03A9F4;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+.reveal a:hover {
+  color: #4cc8fd;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #0277a8; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #03A9F4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #03A9F4; }
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #03A9F4; }
+
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #03A9F4; }
+
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #03A9F4; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #4cc8fd; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #4cc8fd; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #4cc8fd; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #4cc8fd; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #03A9F4;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #03A9F4; }
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal blockquote {
+  text-shadow: 1px 1px 1px #212121, 3px 3px 5px #424242; }
+.reveal h1, .reveal h2 {
+  font-weight: 900; }
+.reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-weight: 100; }
+.reveal p {
+  font-weight: 400; }
+.reveal a[href^=http]:after, .reveal a[href^=https]:after {
+  font-family: 'FontAwesome';
+  content: '\f08e';
+  padding: 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease; }
+.reveal a[href^=http]:hover:after, .reveal a[href^=https]:hover:after {
+  opacity: 1; }
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none; }
+.reveal blockquote {
+  border: none;
+  background-color: transparent;
+  box-shadow: none; }
+.reveal pre, .reveal code {
+  background-color: transparent;
+  border: none;
+  box-shadow: none; }
+.reveal pre code {
+  padding: 0 8px;
+  margin: 8px 0;
+  font: 100 normal normal 0.8em/1em 'Anonymous Pro' monospace;
+  border: none;
+  background-color: rgba(33, 33, 33, 0); }
+.reveal footer.caption {
+  width: 100%;
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  font: 100 normal normal 18px/24px 'Roboto', monospace;
+  color: #BDBDBD;
+  opacity: 0.64;
+  text-align: right; }
+.reveal .dark {
+  color: #424242 !important; }
+.reveal .dark-medium {
+  color: #BDBDBD !important; }
+.reveal .fade {
+  opacity: 0.48; }
+.reveal .light {
+  font-weight: 100 !important; }
+.reveal .medium {
+  font-weight: 400 !important; }
+.reveal .heavy {
+  font-weight: 900 !important; }
+.reveal .highlight {
+  color: #E91E63; }
+.reveal .fa-ul.none {
+  list-style-type: none !important; }
+.reveal .slide-background[data-background-hash] {
+  background-blend-mode: multiply;
+  background-color: rgba(33, 33, 33, 0.64); }
+.reveal .slide-background[data-background-hash]:before {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 16px;
+  color: #9E9E9E;
+  opacity: 0.64;
+  font-family: 'Android Pro', monospace; }
+.reveal .slide-background[data-background-hash*='resources/bg/shining.jpg']:before {
+  content: 'http://static.guim.co.uk/sys-images/Film/Pix/pictures/2012/5/22/1337709078456/The-Shining-008.jpg'; }
+.reveal .slide-background[data-background-hash*='resources/bg/shining.gif']:before {
+  content: 'https://33.media.tumblr.com/24004443558043df5d8092c703675806/tumblr_mngleiihCL1qgio1po1_500.gif'; }
+
+.slide-background[data-background-hash][style*='resources/sencha.png'] {
+  background-position: center center;
+  background-size: 48%;
+  background-color: transparent; }
+
+.me .reveal.center .slides section {
+  height: 326px;
+  top: 50% !important;
+  margin-top: -163px; }
+.me h2 {
+  font-size: 80%; }
+.me h3 {
+  font-size: 64%;
+  font-weight: 100;
+  text-transform: inherit; }
+
+ul.contact {
+  font-size: 48%; }
+  ul.contact a {
+    color: inherit;
+    font-weight: 100; }
+    ul.contact a[href^=http]:after, ul.contact a[href^=https]:after {
+      content: none;
+      padding: 0; }
+    ul.contact a:hover {
+      color: #03A9F4;
+      opacity: 1; }
+
+.examples .slide-background[data-background-hash*='js']:after {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 96px;
+  height: 96px;
+  content: '';
+  background: transparent url('../resources/js.png') center center no-repeat;
+  opacity: 0.16; }
+
+.codestyle ul {
+  margin: 0 4px;
+  border-radius: 0;
+  width: 96%; }
+  .codestyle ul.pros, .codestyle ul.cons {
+    font-size: 32px;
+    font-weight: 100; }
+    .codestyle ul.pros li:first-child, .codestyle ul.cons li:first-child {
+      background-color: transparent;
+      font-weight: 900;
+      text-shadow: 1px 1px 1px #212121, 3px 3px 5px #424242; }
+  .codestyle ul.pros li {
+    background-color: rgba(139, 195, 74, 0.48); }
+    .codestyle ul.pros li:first-child {
+      color: #8BC34A; }
+  .codestyle ul.cons li {
+    background-color: rgba(244, 67, 54, 0.48); }
+    .codestyle ul.cons li:first-child {
+      color: #F44336; }
+  .codestyle ul li {
+    padding: 4px 8px;
+    margin: 4px 0; }
+    .codestyle ul li:first-child, .codestyle ul li:last-child {
+      border-radius: 0; }
+
+.slide-background[data-background-hash][style*='resources/codestyle'] {
+  background-position: 0 0;
+  background-color: rgba(33, 33, 33, 0.88); }
+.slide-background[data-background-hash][style*='resources/codestyle/jscs'] {
+  background-position: 50% 0; }
+.slide-background[data-background-hash][style*='resources/codestyle/jshint'] {
+  background-color: rgba(33, 33, 33, 0.48); }
+
+.dry ul li span, .kiss ul li span {
+  font-size: 2em;
+  font-weight: 900; }
+  .dry ul li span:last-child, .kiss ul li span:last-child {
+    font-weight: 100; }
+
+.dry ul li span:first-child {
+  color: #8BC34A; }
+
+.kiss ul li span:first-child {
+  color: #E91E63; }
+
+.qa footer.caption, .thanks footer.caption {
+  text-align: center; }
+  .qa footer.caption ul li, .thanks footer.caption ul li {
+    padding: 0 16px; }
+    .qa footer.caption ul li a, .thanks footer.caption ul li a {
+      color: inherit;
+      font-weight: 100; }
+      .qa footer.caption ul li a[href^=http]:after, .qa footer.caption ul li a[href^=https]:after, .thanks footer.caption ul li a[href^=http]:after, .thanks footer.caption ul li a[href^=https]:after {
+        content: none;
+        padding: 0; }
+      .qa footer.caption ul li a:hover, .thanks footer.caption ul li a:hover {
+        color: #03A9F4;
+        opacity: 1; }

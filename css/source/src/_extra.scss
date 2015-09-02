@@ -1,0 +1,19 @@
+.slide-background {
+    &[data-background-hash]:before {
+        position    : absolute;
+        bottom      : 16px;
+        left        : 16px;
+        font-size   : 16px;
+        color       : $grey;
+        opacity     : 0.64;
+        font-family : 'Android Pro', monospace;
+    }
+
+    &[data-background-hash*='resources/bg/shining.jpg']:before {
+        content : 'http://static.guim.co.uk/sys-images/Film/Pix/pictures/2012/5/22/1337709078456/The-Shining-008.jpg';
+    }
+
+    &[data-background-hash*='resources/bg/shining.gif']:before {
+        content : 'https://33.media.tumblr.com/24004443558043df5d8092c703675806/tumblr_mngleiihCL1qgio1po1_500.gif';
+    }
+}
