@@ -1,3 +1,3 @@
 # My Code Sucks ...
 
-https://stoe.github.com/my-code-sucks
+http://stoe.github.io/my-code-sucks
