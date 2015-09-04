@@ -1,6 +1,11 @@
-node_modules
-bower_components
-dist
+# folders
+.idea/
+.sass-cache/
+bower_components/
+dist/
+node_modules/
+
+# files
 *.log
-.sass-cache
-index.html
+/index.html
+/Gruntfile.js*

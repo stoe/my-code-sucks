@@ -1,7 +1,3 @@
-h1, h2, h3, h4, h5, h6, p, blockquote {
-    text-shadow : 1px 1px 1px $black, 3px 3px 5px $dark;
-}
-
 h1, h2 {
     font-weight : 900;
 }
@@ -39,8 +35,11 @@ section img {
 }
 
 blockquote {
+    width            : 80%;
+    padding          : 8px 16px;
+    color            : palette(Blue Grey, 500);
+    background-color : rgba(palette(White), 0.64);
     border           : none;
-    background-color : transparent;
     box-shadow       : none;
 }
 
@@ -51,11 +50,12 @@ pre, code {
 }
 
 pre code {
-    padding          : 0 8px;
-    margin           : 8px 0;
-    font             : 100 normal normal 0.8em/1em 'Anonymous Pro' monospace;
+    padding          : 16px;
+    margin           : 4px 0;
+    font             : normal normal normal 0.8em/1.1em 'Anonymous Pro' monospace;
     border           : none;
-    background-color : rgba($black, 0);
+    color            : invert($backgroundColor);
+    background-color : rgba($backgroundColor, 0);
 }
 
 footer.caption {
@@ -64,20 +64,20 @@ footer.caption {
     bottom     : -24px;
     right      : 0;
     font       : 100 normal normal 18px/24px 'Roboto', monospace;
-    color      : $dark-medium;
+    color      : palette(Grey, 400);
     opacity    : 0.64;
     text-align : right;
 }
 
 .dark {
-    color : $dark !important;
+    color : palette(Grey, 800);
 }
 
 .dark-medium {
-    color : $dark-medium !important;
+    color : palette(Grey, 600);
 }
 
-.fade {
+.faded {
     opacity : 0.48;
 }
 
@@ -94,7 +94,7 @@ footer.caption {
 }
 
 .highlight {
-    color : $pink;
+    color : palette(Pink);
 }
 
 .fa-ul.none {
@@ -103,5 +103,4 @@ footer.caption {
 
 .slide-background[data-background-hash] {
     background-blend-mode : multiply;
-    background-color      : rgba($black, 0.64);
 }

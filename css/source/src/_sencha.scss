@@ -1,8 +1,8 @@
 .sencha { }
 
-.slide-background[data-background-hash] {
+.slide-background {
 
-    &[style*='resources/sencha.png'] {
+    &[data-background-hash*='resources/sencha-light.png'], &[data-background-hash*='resources/sencha-dark.png'] {
         background-position : center center;
         background-size     : 48%;
         background-color    : transparent;

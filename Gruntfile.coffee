@@ -1,10 +1,8 @@
-# Generated on 2015-09-02 using generator-reveal 0.5.2
+# Generated on 2015-09-03 using generator-reveal 0.5.2
 module.exports = (grunt) ->
-
     grunt.initConfig
 
         watch:
-
             livereload:
                 options:
                     livereload: true
@@ -37,26 +35,26 @@ module.exports = (grunt) ->
                 tasks: ['sass']
 
         sass:
-
             theme:
+                options:
+                    sourcemap: 'none'
+                    trace: true
                 files:
+                    'css/sencha.css': 'css/source/sencha.scss',
                     'css/theme.css': 'css/source/theme.scss'
-                    'css/stoe.css': 'css/source/stoe.scss'
 
         connect:
-
             livereload:
                 options:
                     port: 8000
-                    # Change hostname to '0.0.0.0' to access
-                    # the server from outside.
+# Change hostname to '0.0.0.0' to access
+# the server from outside.
                     hostname: 'localhost'
                     base: '.'
                     open: false
                     livereload: true
 
         coffeelint:
-
             options:
                 indentation:
                     value: 4
@@ -66,14 +64,12 @@ module.exports = (grunt) ->
             all: ['Gruntfile.coffee']
 
         jshint:
-
             options:
                 jshintrc: '.jshintrc'
 
             all: ['js/*.js']
 
         copy:
-
             dist:
                 files: [{
                     expand: true
@@ -85,16 +81,15 @@ module.exports = (grunt) ->
                         'resources/**'
                     ]
                     dest: 'dist/'
-                },{
+                }, {
                     expand: true
-                    src: ['index.html']
+                    src: ['index.html', 'README.md']
                     dest: 'dist/'
                     filter: 'isFile'
                 }]
 
 
         buildcontrol:
-
             options:
                 dir: 'dist'
                 commit: true
@@ -104,8 +99,6 @@ module.exports = (grunt) ->
                 options:
                     remote: 'git@github.com:stoe/my-code-sucks.git'
                     branch: 'gh-pages'
-
-
 
     # Load all grunt tasks.
     require('load-grunt-tasks')(grunt)
@@ -118,12 +111,10 @@ module.exports = (grunt) ->
             slides = grunt.file.readJSON 'slides/list.json'
 
             html = grunt.template.process indexTemplate, data:
-                slides:
-                    slides
+                slides: slides
                 section: (slide) ->
                     grunt.template.process sectionTemplate, data:
-                        slide:
-                            slide
+                        slide: slide
             grunt.file.write 'index.html', html
 
     grunt.registerTask 'test',
@@ -148,13 +139,11 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-
     grunt.registerTask 'deploy',
         'Deploy to Github Pages', [
             'dist'
             'buildcontrol'
         ]
-
 
     # Define default task.
     grunt.registerTask 'default', [

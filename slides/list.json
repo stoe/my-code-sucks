@@ -3,7 +3,7 @@
         "filename": "sencha-inc.html",
         "attr":     {
             "data-state":                 "sencha",
-            "data-background":            "resources/sencha.png",
+            "data-background":            "resources/sencha-light.png",
             "data-background-transition": "zoom"
         }
     },
@@ -145,7 +145,7 @@
         "filename": "sencha-inc.html",
         "attr":     {
             "data-state":                 "sencha",
-            "data-background":            "resources/sencha.png",
+            "data-background":            "resources/sencha-light.png",
             "data-background-transition": "zoom"
         }
     }

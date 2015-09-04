@@ -1,8 +1,10 @@
 .me {
     .reveal.center .slides section {
-        height     : 326px;
+        height     : 264px;
+        width      : 512px;
         top        : 50% !important;
-        margin-top : -163px;
+        margin-top : -182px;
+        background-color: rgba(palette(White), 0.64);
     }
 
     h2 {
@@ -21,7 +23,7 @@ ul.contact {
     font-size : 48%;
 
     a {
-        color       : inherit;
+        color       : palette(Grey, 600);
         font-weight : 100;
 
         // reset from _base.scss
@@ -30,11 +32,6 @@ ul.contact {
                 content : none;
                 padding : 0;
             }
-        }
-
-        &:hover {
-            color   : $light-blue;
-            opacity : 1;
         }
     }
 }

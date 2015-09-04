@@ -1,4 +1,15 @@
 .codestyle {
+
+    section[data-background*='resources/codestyle'] {
+        & {
+            color : palette(Blue Grey, 50);
+        }
+
+        h1, h2, h3, h4, h5, h6, small {
+            color : palette(White);
+        }
+    }
+
     ul {
         margin        : 0 4px;
         border-radius : 0;
@@ -11,23 +22,22 @@
             li:first-child {
                 background-color : transparent;
                 font-weight      : 900;
-                text-shadow      : 1px 1px 1px $black, 3px 3px 5px $dark;
             }
         }
 
         &.pros li {
-            background-color : rgba($light-green, .48);
+            background-color : rgba(palette(Light Green, 500), .48);
 
             &:first-child {
-                color : $light-green;
+                color : palette(Light Green, 500);
             }
         }
 
         &.cons li {
-            background-color : rgba($red, .48);
+            background-color : rgba(palette(Red, 500), .48);
 
             &:first-child {
-                color : $red;
+                color : palette(Red, 500);
             }
         }
 
@@ -42,18 +52,17 @@
     }
 }
 
-.slide-background[data-background-hash] {
-
-    &[style*='resources/codestyle'] {
+.slide-background {
+    &[data-background-hash*='resources/codestyle'] {
         background-position : 0 0;
-        background-color    : rgba($black, 0.88);
+        background-color    : rgba(palette(Grey, 800), 0.96);
     }
 
-    &[style*='resources/codestyle/jscs'] {
+    &[data-background-hash*='resources/codestyle/jscs'] {
         background-position : 50% 0;
     }
 
-    &[style*='resources/codestyle/jshint'] {
-        background-color : rgba($black, 0.48);
+    &[data-background-hash*='resources/codestyle/jshint'] {
+        background-color : rgba(palette(Grey, 800), 0.48);
     }
 }

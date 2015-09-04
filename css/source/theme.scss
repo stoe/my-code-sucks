@@ -21,31 +21,31 @@
 
 
 // Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
-$backgroundColor: #222;
+$backgroundColor : #222222;
 
-$mainColor: #fff;
-$headingColor: #fff;
+$mainColor : #FFFFFF;
+$headingColor : #FFFFFF;
 
-$mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingTextShadow: none;
-$headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
-$linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$mainFontSize : 38px;
+$mainFont : 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont : 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow : none;
+$headingLetterSpacing : normal;
+$headingTextTransform : uppercase;
+$headingFontWeight : 600;
+$linkColor : #42AFFA;
+$linkColorHover : lighten($linkColor, 15%);
+$selectionBackgroundColor : lighten($linkColor, 25%);
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
+$heading1Size : 2.5em;
+$heading2Size : 1.6em;
+$heading3Size : 1.3em;
+$heading4Size : 1.0em;
 
 section.has-light-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #222;
-	}
+    &, h1, h2, h3, h4, h5, h6 {
+        color : #222222;
+    }
 }
 
 // Theme template ------------------------------

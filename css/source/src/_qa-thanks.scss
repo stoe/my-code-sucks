@@ -8,7 +8,7 @@
                 padding : 0 16px;
 
                 a {
-                    color       : inherit;
+                    color       : palette(Grey, 600);
                     font-weight : 100;
 
                     // reset from _base.scss
@@ -20,7 +20,7 @@
                     }
 
                     &:hover {
-                        color   : $light-blue;
+                        color   : $linkColorHover;
                         opacity : 1;
                     }
                 }

@@ -15,39 +15,39 @@
 @import "../../bower_components/reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
-
 // Include theme-specific fonts
-//@import url(../bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900|Anonymous+Pro);
 
 // Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900|Anonymous+Pro);
-@import 'var/colors';
+@import '../../bower_components/google-material-color/dist/palette';
+$backgroundColor : palette(White);
 
-$backgroundColor: $black;
+$mainColor : palette(Grey, 400);
+$headingColor : palette(Blue Grey, 700);
 
-$mainColor: $white;
-$headingColor: $light;
+$mainFontSize : 38px;
+$mainFont : 'Helvetica Neue', Helvetica, sans-serif;
+$headingFont : 'Helvetica Neue', Helvetica, sans-serif;
+$headingTextShadow : none;
+$headingLetterSpacing : normal;
+$headingTextTransform : uppercase;
+$headingFontWeight : 600;
+$linkColor : palette(Light Green);
+$linkColorHover : lighten($linkColor, 15%);
+$selectionBackgroundColor : lighten($linkColor, 25%);
 
-$mainFontSize: 48px;
-$mainFont: 'Roboto', Helvetica, sans-serif;
-$headingFont: 'Roboto', Helvetica, sans-serif;
-$headingTextShadow: none;
-$headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 900;
-$linkColor: $light-blue;
-$linkColorHover: lighten( $linkColor, 16% );
-$selectionBackgroundColor: lighten( $linkColor, 32% );
+$heading1Size : 2.5em;
+$heading2Size : 1.6em;
+$heading3Size : 1.3em;
+$heading4Size : 1.0em;
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
+section.has-dark-background {
+    & {
+        color : palette(Blue Grey, 200);
+    }
 
-section.has-light-background {
-    &, h1, h2, h3, h4, h5, h6 {
-        color: $dark;
+    h1, h2, h3, h4, h5, h6 {
+        color : palette(White);
     }
 }
 
@@ -62,6 +62,8 @@ section.has-light-background {
 
 @import 'src/sencha';
 @import 'src/index';
+@import 'src/default';
+@import 'src/code';
 @import 'src/me';
 @import 'src/example';
 @import 'src/codestyle';

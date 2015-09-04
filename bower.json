@@ -1,10 +1,11 @@
 {
-  "name": "my-code-sucks",
-  "version": "0.0.0",
-  "dependencies": {
-    "reveal.js": "~3.1.0",
-    "highlightjs": "~8.5.0",
-    "fontawesome": "~4.4.0",
-    "bootstrap": "~3.3.5"
-  }
+    "name":         "sencha-presentation-template",
+    "version":      "1.0.0",
+    "dependencies": {
+        "bootstrap":             "~3.3.5",
+        "font-awesome":          "fontawesome#~4.4.0",
+        "google-material-color": "~1.2.6",
+        "highlightjs":           "~8.5.0",
+        "reveal.js":             "~3.1.0"
+    }
 }

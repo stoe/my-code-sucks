@@ -1,12 +1,14 @@
 .slide-background {
     &[data-background-hash]:before {
-        position    : absolute;
-        bottom      : 16px;
-        left        : 16px;
-        font-size   : 16px;
-        color       : $grey;
-        opacity     : 0.64;
-        font-family : 'Android Pro', monospace;
+        position         : absolute;
+        bottom           : 16px;
+        left             : 16px;
+        font-size        : 16px;
+        color            : palette(Blue Grey, 500);
+        opacity          : 0.64;
+        font-family      : 'Android Pro', monospace;
+        background-color : palette(White);
+        padding          : 2px 4px;
     }
 
     &[data-background-hash*='resources/bg/shining.jpg']:before {
