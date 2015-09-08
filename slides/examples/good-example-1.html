@@ -1,16 +1,51 @@
 <pre><code data-trim class="javascript hljs">
-var loremipsum = $('.loremipsum'), 
-    num        = 20000, 
-    i;
-
-  for (i = 1; num >= i; i++) {
-    loremipsum.html(i); 
-    loremipsum.width(parseInt(i / num * 100, 10) + '%'); 
+function foo (x) {
+    if (x === 1) {
+        console.log('%s + 5 = %s', x, (x + 5));
+    } else {
+        console.log('NaN');
+    }
 }
 </code></pre>
 
-<pre class="fragment"><code data-trim class="javascript hljs">
-    // $('.loremipsum') is called one time only
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo(1);
+foo('1');
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => 1 + 5 = 6
+// => NaN
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo(true);
+foo(false);
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => NaN
+// => NaN
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo([]);
+foo([1]);
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => NaN
+// => NaN
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo({});
+foo({bar: 1});
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => NaN
+// => NaN
 </code></pre>
 
 

@@ -1,23 +1,15 @@
 <pre><code data-trim class="javascript hljs">
-function foo (x) {function bar (y) {
-        var r = x * y; x = y;
-        return r;
-    }
-    return bar;
+for (var i = 1; i <= 20000; i++) {
+    $('.loremipsum').html(i);
+    $('.loremipsum').width(parseInt(i / 20000 * 100, 10) + '%'); 
 }
-
-var f = foo(3), z = f(5), t = f(2);
 </code></pre>
 
-<pre class="fragment"><code data-trim class="javascript hljs">
-// What is the value of "x" when "f" is called the first time?
-
-// What is the value of "x" when "f" is called the second time?
-
-// What is the value of "t"?
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// $('.loremipsum') is called 40,000 (= 2 * 20,000) times
 </code></pre>
+
 
 <aside class="notes">
-    Put your speaker notes here.
-    You can see them pressing 's'.
+    // TODO
 </aside>

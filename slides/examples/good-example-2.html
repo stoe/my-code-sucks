@@ -1,37 +1,19 @@
 <pre><code data-trim class="javascript hljs">
-function foo (x) {
-    // define inner function
-    function bar (y) {
-        var r = x * y;
+var loremipsum = $('.loremipsum'), 
+    num        = 20000, 
+    i;
 
-        // override x / preserve y
-        x = y;
-
-        return r;
-    }
-
-    // return inner function
-    return bar;
+  for (i = 1; num >= i; i++) {
+    loremipsum.html(i); 
+    loremipsum.width(parseInt(i / num * 100, 10) + '%'); 
 }
-
-// tests
-var f = foo(3),
-    z = f(5),
-    t = f(2);
 </code></pre>
 
-<pre class="fragment"><code data-trim class="javascript hljs">
-// What is the value of "x" when "f" is called the first time?
-// x = 3;
-
-// What is the value of "x" when "f" is called the second time?
-// x = 3; y = 5; z = 15;
-
-// What is the value of "t"?
-// x = 5; y = 2; t = 10;
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// $('.loremipsum') is called one time only
 </code></pre>
+
 
 <aside class="notes">
-    Put your speaker notes here.
-    You can see them pressing 's'.
+    // TODO
 </aside>

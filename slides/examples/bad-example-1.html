@@ -1,12 +1,51 @@
 <pre><code data-trim class="javascript hljs">
-for (var i = 1; i <= 20000; i++) {
-    $('.loremipsum').html(i);
-    $('.loremipsum').width(parseInt(i / 20000 * 100, 10) + '%'); 
+function foo (x) {
+    if (x == 1) {
+        console.log('%s + 5 = %s', x, (x + 5));
+    } else {
+        console.log('NaN');
+    }
 }
 </code></pre>
 
-<pre class="fragment"><code data-trim class="javascript hljs">
-    // $('.loremipsum') is called 40,000 (= 2 * 20,000) times
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo(1);
+foo('1');
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => 1 + 5 = 6
+// => '1' + 5 = 15
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo(true);
+foo(false);
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => true + 5 = 6
+// => NaN
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo([]);
+foo([1]);
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => NaN
+// => Array[1] + 5 = 15
+</code></pre>
+
+
+<pre class="min-margin"><code data-trim class="javascript hljs">
+foo({});
+foo({bar: 1});
+</code></pre>
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// => NaN
+// => NaN
 </code></pre>
 
 
