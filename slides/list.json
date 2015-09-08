@@ -37,31 +37,38 @@
             }
         },
         {
+            "filename": "examples/bad-example-0.html",
+            "attr":     {
+                "data-state":      "examples exec-0",
+                "data-background": "js-bad"
+            }
+        },
+        {
             "filename": "examples/bad-example-1.html",
             "attr":     {
                 "data-state":      "examples",
-                "data-background": "js"
+                "data-background": "js-bad"
             }
         },
         {
             "filename": "examples/good-example-1.html",
             "attr":     {
                 "data-state":      "examples",
-                "data-background": "js"
+                "data-background": "js-good"
             }
         },
         {
             "filename": "examples/bad-example-2.html",
             "attr":     {
                 "data-state":      "examples",
-                "data-background": "js"
+                "data-background": "js-bad"
             }
         },
         {
             "filename": "examples/good-example-2.html",
             "attr":     {
                 "data-state":      "examples",
-                "data-background": "js"
+                "data-background": "js-good"
             }
         }
     ],
