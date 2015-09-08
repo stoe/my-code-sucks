@@ -11,18 +11,43 @@
     }
 
     ul {
-        margin        : 0 4px;
+        margin        : 0;
         border-radius : 0;
         width         : 96%;
 
         &.pros, &.cons {
-            font-size   : 32px;
+            font-size   : 0.75em;
             font-weight : 100;
 
             li {
+                padding       : 4px 8px;
+                margin        : 0;
+                border-bottom : 1px solid rgba(palette(White), 0.16);
+
+                &:first-child, &:last-child {
+                    border-bottom : none;
+                    border-radius : 0;
+                }
+
                 &:first-child {
                     background-color : transparent;
                     font-weight      : 900;
+                }
+
+                &.crockford {
+                    padding-right : 82px;
+
+                    &:after {
+                        position              : absolute;
+                        top                   : 50%;
+                        right                 : 6px;
+                        width                 : 70px;
+                        height                : 70px;
+                        margin-top            : -35px;
+                        content               : '';
+                        background            : url('../resources/crockford.jpg') center top no-repeat;
+                        background-blend-mode : multiply;
+                    }
                 }
 
                 small, small * {
@@ -30,7 +55,8 @@
                 }
 
                 a, a code {
-                    color : palette(White);
+                    color           : palette(White);
+                    text-decoration : underline;
 
                     &:hover {
                         color : palette(Light Blue, 500);
@@ -52,27 +78,6 @@
 
             &:first-child {
                 color : palette(Red, 500);
-            }
-        }
-
-        li {
-            padding : 4px 8px;
-            margin  : 4px 0;
-
-            &:first-child, &:last-child {
-                border-radius : 0;
-            }
-
-            &.crockford:after {
-                position              : absolute;
-                top                   : 50%;
-                right                 : 6px;
-                width                 : 80px;
-                height                : 80px;
-                margin-top            : -40px;
-                content               : '';
-                background            : url('../resources/crockford.jpg') center center no-repeat;
-                background-blend-mode : multiply;
             }
         }
     }
