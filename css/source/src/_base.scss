@@ -10,13 +10,20 @@ p {
     font-weight : 400;
 }
 
-a {
+a, a code {
+    color      : $linkColor;
+    transition : all .25s ease;
+
+    &:hover {
+        color : $linkColorHover;
+    }
+
     &[href^=http], &[href^=https] {
         &:after {
             font-family        : 'FontAwesome';
             content            : '\f08e';
             padding            : 0 5px;
-            opacity            : 0;
+            opacity            : 0.16;
             -webkit-transition : opacity 0.25s ease;
             -moz-transition    : opacity 0.25s ease;
             transition         : opacity 0.25s ease;
@@ -58,6 +65,11 @@ pre code {
     background-color : rgba($backgroundColor, 0);
 }
 
+code {
+    font  : normal normal normal 0.8em/1.1em 'Anonymous Pro' monospace;
+    color : palette(White);
+}
+
 footer.caption {
     width      : 100%;
     position   : absolute;
@@ -97,7 +109,7 @@ footer.caption {
     color : palette(Pink);
 }
 
-.fa-ul.none {
+.icon-ul.none {
     list-style-type : none !important;
 }
 

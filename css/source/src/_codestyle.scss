@@ -19,9 +19,23 @@
             font-size   : 32px;
             font-weight : 100;
 
-            li:first-child {
-                background-color : transparent;
-                font-weight      : 900;
+            li {
+                &:first-child {
+                    background-color : transparent;
+                    font-weight      : 900;
+                }
+
+                small, small * {
+                    vertical-align : baseline;
+                }
+
+                a, a code {
+                    color : palette(White);
+
+                    &:hover {
+                        color : palette(Light Blue, 500);
+                    }
+                }
             }
         }
 
@@ -48,21 +62,60 @@
             &:first-child, &:last-child {
                 border-radius : 0;
             }
+
+            &.crockford:after {
+                position              : absolute;
+                top                   : 50%;
+                right                 : 6px;
+                width                 : 80px;
+                height                : 80px;
+                margin-top            : -40px;
+                content               : '';
+                background            : url('../resources/crockford.jpg') center center no-repeat;
+                background-blend-mode : multiply;
+            }
         }
     }
-}
 
-.slide-background {
-    &[data-background-hash*='resources/codestyle'] {
-        background-position : 0 0;
-        background-color    : rgba(palette(Grey, 800), 0.96);
+    ul.pros li.crockford:after {
+        border : 1px solid palette(Light Green, 500);
     }
 
-    &[data-background-hash*='resources/codestyle/jscs'] {
-        background-position : 50% 0;
+    ul.cons li.crockford:after {
+        border : 1px solid palette(Red, 500);
     }
 
-    &[data-background-hash*='resources/codestyle/jshint'] {
-        background-color : rgba(palette(Grey, 800), 0.48);
+    //
+    .slide-background {
+        //&[data-background-hash*='resources/codestyle/jslint'],
+        //&[data-background-hash*='resources/codestyle/jshint'],
+        //&[data-background-hash*='resources/codestyle/jscs'],
+        //&[data-background-hash*='resources/codestyle/eslint'] {
+        //    &:before {
+        //        position         : absolute;
+        //        bottom           : 16px;
+        //        left             : 16px;
+        //        font-size        : 16px;
+        //        color            : palette(Blue Grey, 500);
+        //        opacity          : 0.64;
+        //        font-family      : 'Android Pro', monospace;
+        //        background-color : palette(White);
+        //        padding          : 2px 4px;
+        //        content          : 'http://www.sitepoint.com/comparison-javascript-linting-tools/';
+        //    }
+        //}
+
+        &[data-background-hash*='resources/codestyle'] {
+            background-position : 0 0;
+            background-color    : rgba(palette(Grey, 800), 0.96);
+        }
+
+        &[data-background-hash*='resources/codestyle/jscs'] {
+            background-position : 50% 0;
+        }
+
+        &[data-background-hash*='resources/codestyle/jshint'] {
+            background-color : rgba(palette(Grey, 800), 0.48);
+        }
     }
 }

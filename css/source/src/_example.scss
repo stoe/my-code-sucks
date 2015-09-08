@@ -1,12 +1,41 @@
 .examples {
-    .slide-background[data-background-hash*='js']:after {
+    .reveal pre.min-margin {
+        margin : 0 auto;
+        //padding : 0;
+
+        code {
+            margin  : 0 0 4px 0;
+            padding : 0 16px;
+        }
+    }
+
+    .slide-background[data-background-hash*='js']:before {
         position   : absolute;
         top        : 16px;
-        right      : 16px;
+        left       : 16px;
         width      : 96px;
         height     : 96px;
         content    : '';
         background : transparent url('../resources/js.png') center center no-repeat;
         opacity    : 0.48;
+    }
+
+    .slide-background[data-background-hash*='bad']:after, .slide-background[data-background-hash*='good']:after {
+        position  : absolute;
+        top       : 16px;
+        right     : 16px;
+        opacity   : 0.32;
+        font-family: Anonymous Pro, monospace;
+        font-size : 0.8em;
+    }
+
+    .slide-background[data-background-hash*='bad']:after {
+        content : 'bad';
+        color   : palette(Red, 800);
+    }
+
+    .slide-background[data-background-hash*='good']:after {
+        content : 'good';
+        color   : palette(Light Green, 500);
     }
 }

@@ -1,19 +1,21 @@
 .me {
     .reveal.center .slides section {
-        height     : 264px;
-        width      : 512px;
-        top        : 50% !important;
-        margin-top : -182px;
-        background-color: rgba(palette(White), 0.64);
+        height           : 264px;
+        width            : 512px;
+        top              : 50% !important;
+        margin-top       : -182px;
+        background-color : rgba(palette(White), 0.80);
     }
 
-    h2 {
+    .reveal h2 {
         font-size : 80%;
+        color     : palette(Blue Gray, 500);
     }
 
-    h3 {
+    .reveal h3 {
         font-size      : 64%;
-        font-weight    : 100;
+        font-weight    : 400;
+        color          : palette(Gray, 600);
         text-transform : inherit;
     }
 
@@ -24,7 +26,7 @@ ul.contact {
 
     a {
         color       : palette(Grey, 600);
-        font-weight : 100;
+        font-weight : 400;
 
         // reset from _base.scss
         &[href^=http], &[href^=https] {
@@ -33,5 +35,12 @@ ul.contact {
                 padding : 0;
             }
         }
+    }
+}
+
+.slide-background {
+    &[data-background-hash*='resources/me.jpg'] {
+        background-position : 50% 50%;
+        background-color    : rgba(palette(Grey, 800), 0.64);
     }
 }

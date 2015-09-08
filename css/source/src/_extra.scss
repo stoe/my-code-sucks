@@ -1,3 +1,14 @@
+// rock paper sicssors lizard spock
+i[class*='icon-hand-'] {
+    color      : palette(Grey, 400);
+    transition : all 0.2s ease;
+
+    &:hover {
+        color     : palette(Pink, 500);
+    }
+}
+
+// captions
 .slide-background {
     &[data-background-hash]:before {
         position         : absolute;

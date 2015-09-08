@@ -17,6 +17,7 @@
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900|Anonymous+Pro);
+@import url(https://fonticons-free-fonticons.netdna-ssl.com/kits/94ee67a6/94ee67a6.css);
 
 // Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
 @import '../../bower_components/google-material-color/dist/palette';
@@ -33,7 +34,7 @@ $headingLetterSpacing : normal;
 $headingTextTransform : uppercase;
 $headingFontWeight : 600;
 $linkColor : palette(Light Green);
-$linkColorHover : lighten($linkColor, 15%);
+$linkColorHover : palette(Light Blue, 500);
 $selectionBackgroundColor : lighten($linkColor, 25%);
 
 $heading1Size : 2.5em;
