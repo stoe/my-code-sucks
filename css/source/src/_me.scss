@@ -19,28 +19,25 @@
         text-transform : inherit;
     }
 
-}
+    ul.contact {
+        font-size : 48%;
 
-ul.contact {
-    font-size : 48%;
+        a {
+            color       : palette(Grey, 600);
+            font-weight : 400;
 
-    a {
-        color       : palette(Grey, 600);
-        font-weight : 400;
-
-        // reset from _base.scss
-        &[href^=http], &[href^=https] {
-            &:after {
-                content : none;
-                padding : 0;
+            // reset from _base.scss
+            &[href^=http], &[href^=https] {
+                &:after {
+                    content : none;
+                    padding : 0;
+                }
             }
         }
     }
-}
 
-.slide-background {
-    &[data-background-hash*='resources/me.jpg'] {
-        background-position : 50% 50%;
-        background-color    : rgba(palette(Grey, 800), 0.64);
+    .slide-background[data-background-hash*='resources/me.jpg'] {
+        background-position : left center;
+        background-color    : rgba(palette(Grey, 800), 0.96);
     }
 }
