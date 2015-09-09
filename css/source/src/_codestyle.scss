@@ -53,20 +53,11 @@
                 small, small * {
                     vertical-align : baseline;
                 }
-
-                a, a code {
-                    color           : palette(White);
-                    text-decoration : underline;
-
-                    &:hover {
-                        color : palette(Light Blue, 500);
-                    }
-                }
             }
         }
 
         &.pros li {
-            background-color : rgba(palette(Light Green, 500), .48);
+            background-color : rgba(palette(Light Green, 500), .64);
 
             &:first-child {
                 color : palette(Light Green, 500);
@@ -74,7 +65,7 @@
         }
 
         &.cons li {
-            background-color : rgba(palette(Red, 500), .48);
+            background-color : rgba(palette(Red, 500), .64);
 
             &:first-child {
                 color : palette(Red, 500);

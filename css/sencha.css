@@ -483,17 +483,12 @@ body {
           background-blend-mode: multiply; }
       .codestyle ul.pros li small, .codestyle ul.pros li small *, .codestyle ul.cons li small, .codestyle ul.cons li small * {
         vertical-align: baseline; }
-      .codestyle ul.pros li a, .codestyle ul.pros li a code, .codestyle ul.cons li a, .codestyle ul.cons li a code {
-        color: #ffffff;
-        text-decoration: underline; }
-        .codestyle ul.pros li a:hover, .codestyle ul.pros li a code:hover, .codestyle ul.cons li a:hover, .codestyle ul.cons li a code:hover {
-          color: #03A9F4; }
   .codestyle ul.pros li {
-    background-color: rgba(139, 195, 74, 0.48); }
+    background-color: rgba(139, 195, 74, 0.64); }
     .codestyle ul.pros li:first-child {
       color: #8BC34A; }
   .codestyle ul.cons li {
-    background-color: rgba(244, 67, 54, 0.48); }
+    background-color: rgba(244, 67, 54, 0.64); }
     .codestyle ul.cons li:first-child {
       color: #F44336; }
 .codestyle ul.pros li.crockford:after {
