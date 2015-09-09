@@ -22,7 +22,7 @@ body {
   background-color: #ffffff; }
 
 .reveal {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Klavika", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #BDBDBD; }
@@ -48,7 +48,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #455A64;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Klavika", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -408,19 +408,17 @@ body {
   font-weight: 400;
   color: #757575;
   text-transform: inherit; }
-
-ul.contact {
+.me ul.contact {
   font-size: 48%; }
-  ul.contact a {
+  .me ul.contact a {
     color: #757575;
     font-weight: 400; }
-    ul.contact a[href^=http]:after, ul.contact a[href^=https]:after {
+    .me ul.contact a[href^=http]:after, .me ul.contact a[href^=https]:after {
       content: none;
       padding: 0; }
-
-.slide-background[data-background-hash*='resources/me.jpg'] {
-  background-position: 50% 50%;
-  background-color: rgba(66, 66, 66, 0.64); }
+.me .slide-background[data-background-hash*='resources/me.jpg'] {
+  background-position: left center;
+  background-color: rgba(66, 66, 66, 0.96); }
 
 .examples .reveal pre.min-margin {
   margin: 0 auto; }
@@ -455,21 +453,41 @@ ul.contact {
 .codestyle section[data-background*='resources/codestyle'] h1, .codestyle section[data-background*='resources/codestyle'] h2, .codestyle section[data-background*='resources/codestyle'] h3, .codestyle section[data-background*='resources/codestyle'] h4, .codestyle section[data-background*='resources/codestyle'] h5, .codestyle section[data-background*='resources/codestyle'] h6, .codestyle section[data-background*='resources/codestyle'] small {
   color: #ffffff; }
 .codestyle ul {
-  margin: 0 4px;
+  margin: 0;
   border-radius: 0;
   width: 96%; }
   .codestyle ul.pros, .codestyle ul.cons {
-    font-size: 32px;
+    font-size: 0.75em;
     font-weight: 100; }
-    .codestyle ul.pros li:first-child, .codestyle ul.cons li:first-child {
-      background-color: transparent;
-      font-weight: 900; }
-    .codestyle ul.pros li small, .codestyle ul.pros li small *, .codestyle ul.cons li small, .codestyle ul.cons li small * {
-      vertical-align: baseline; }
-    .codestyle ul.pros li a, .codestyle ul.pros li a code, .codestyle ul.cons li a, .codestyle ul.cons li a code {
-      color: #ffffff; }
-      .codestyle ul.pros li a:hover, .codestyle ul.pros li a code:hover, .codestyle ul.cons li a:hover, .codestyle ul.cons li a code:hover {
-        color: #03A9F4; }
+    .codestyle ul.pros li, .codestyle ul.cons li {
+      padding: 4px 8px;
+      margin: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16); }
+      .codestyle ul.pros li:first-child, .codestyle ul.pros li:last-child, .codestyle ul.cons li:first-child, .codestyle ul.cons li:last-child {
+        border-bottom: none;
+        border-radius: 0; }
+      .codestyle ul.pros li:first-child, .codestyle ul.cons li:first-child {
+        background-color: transparent;
+        font-weight: 900; }
+      .codestyle ul.pros li.crockford, .codestyle ul.cons li.crockford {
+        padding-right: 82px; }
+        .codestyle ul.pros li.crockford:after, .codestyle ul.cons li.crockford:after {
+          position: absolute;
+          top: 50%;
+          right: 6px;
+          width: 70px;
+          height: 70px;
+          margin-top: -35px;
+          content: '';
+          background: url("../resources/crockford.jpg") center top no-repeat;
+          background-blend-mode: multiply; }
+      .codestyle ul.pros li small, .codestyle ul.pros li small *, .codestyle ul.cons li small, .codestyle ul.cons li small * {
+        vertical-align: baseline; }
+      .codestyle ul.pros li a, .codestyle ul.pros li a code, .codestyle ul.cons li a, .codestyle ul.cons li a code {
+        color: #ffffff;
+        text-decoration: underline; }
+        .codestyle ul.pros li a:hover, .codestyle ul.pros li a code:hover, .codestyle ul.cons li a:hover, .codestyle ul.cons li a code:hover {
+          color: #03A9F4; }
   .codestyle ul.pros li {
     background-color: rgba(139, 195, 74, 0.48); }
     .codestyle ul.pros li:first-child {
@@ -478,21 +496,6 @@ ul.contact {
     background-color: rgba(244, 67, 54, 0.48); }
     .codestyle ul.cons li:first-child {
       color: #F44336; }
-  .codestyle ul li {
-    padding: 4px 8px;
-    margin: 4px 0; }
-    .codestyle ul li:first-child, .codestyle ul li:last-child {
-      border-radius: 0; }
-    .codestyle ul li.crockford:after {
-      position: absolute;
-      top: 50%;
-      right: 6px;
-      width: 80px;
-      height: 80px;
-      margin-top: -40px;
-      content: '';
-      background: url("../resources/crockford.jpg") center center no-repeat;
-      background-blend-mode: multiply; }
 .codestyle ul.pros li.crockford:after {
   border: 1px solid #8BC34A; }
 .codestyle ul.cons li.crockford:after {
