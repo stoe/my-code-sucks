@@ -12,12 +12,12 @@
                     font-weight : 100;
 
                     // reset from _base.scss
-                    &[href^=http], &[href^=https] {
-                        &:after {
-                            content : none;
-                            padding : 0;
-                        }
-                    }
+                    //&[href^=http], &[href^=https] {
+                    //    &:after {
+                    //        content : none;
+                    //        padding : 0;
+                    //    }
+                    //}
 
                     &:hover {
                         color   : $linkColorHover;

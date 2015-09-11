@@ -307,16 +307,6 @@ body {
   transition: all .25s ease; }
   .reveal a:hover, .reveal a code:hover {
     color: #03A9F4; }
-  .reveal a[href^=http]:after, .reveal a[href^=https]:after, .reveal a code[href^=http]:after, .reveal a code[href^=https]:after {
-    font-family: 'FontAwesome';
-    content: '\f08e';
-    padding: 0 5px;
-    opacity: 0.16;
-    -webkit-transition: opacity 0.25s ease;
-    -moz-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease; }
-  .reveal a[href^=http]:hover:after, .reveal a[href^=https]:hover:after, .reveal a code[href^=http]:hover:after, .reveal a code[href^=https]:hover:after {
-    opacity: 1; }
 .reveal section img {
   border: none;
   background: none;
@@ -410,15 +400,16 @@ body {
   text-transform: inherit; }
 .me ul.contact {
   font-size: 48%; }
+  .me ul.contact li {
+    line-height: 24px; }
+    .me ul.contact li i {
+      top: -1px; }
   .me ul.contact a {
     color: #757575;
     font-weight: 400; }
-    .me ul.contact a[href^=http]:after, .me ul.contact a[href^=https]:after {
-      content: none;
-      padding: 0; }
 .me .slide-background[data-background-hash*='resources/me.jpg'] {
   background-position: left center;
-  background-color: rgba(66, 66, 66, 0.96); }
+  background-color: rgba(66, 66, 66, 0.8); }
 
 .examples .reveal pre.min-margin {
   margin: 0 auto; }
@@ -522,9 +513,6 @@ body {
     .qa footer.caption ul li a, .thanks footer.caption ul li a {
       color: #757575;
       font-weight: 100; }
-      .qa footer.caption ul li a[href^=http]:after, .qa footer.caption ul li a[href^=https]:after, .thanks footer.caption ul li a[href^=http]:after, .thanks footer.caption ul li a[href^=https]:after {
-        content: none;
-        padding: 0; }
       .qa footer.caption ul li a:hover, .thanks footer.caption ul li a:hover {
         color: #03A9F4;
         opacity: 1; }

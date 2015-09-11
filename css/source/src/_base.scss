@@ -18,21 +18,21 @@ a, a code {
         color : $linkColorHover;
     }
 
-    &[href^=http], &[href^=https] {
-        &:after {
-            font-family        : 'FontAwesome';
-            content            : '\f08e';
-            padding            : 0 5px;
-            opacity            : 0.16;
-            -webkit-transition : opacity 0.25s ease;
-            -moz-transition    : opacity 0.25s ease;
-            transition         : opacity 0.25s ease;
-        }
-
-        &:hover:after {
-            opacity : 1;
-        }
-    }
+    //&[href^=http], &[href^=https] {
+    //    &:after {
+    //        font-family        : 'FontAwesome', monospace;
+    //        content            : '\f08e';
+    //        padding            : 0 5px;
+    //        opacity            : 0.16;
+    //        -webkit-transition : opacity 0.25s ease;
+    //        -moz-transition    : opacity 0.25s ease;
+    //        transition         : opacity 0.25s ease;
+    //    }
+    //
+    //    &:hover:after {
+    //        opacity : 1;
+    //    }
+    //}
 }
 
 section img {
