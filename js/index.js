@@ -1,12 +1,14 @@
 var ran = {
-    'example-0': false
+    firstExample: false
 };
 
 Reveal.addEventListener('exec-0', function () {
     'use strict';
 
-    if (false === ran['example-0']) {
+    if (false === ran.firstExample) {
         console.group('Bad Example 1');
+        /* jshint ignore:start */
+
         console.log('' == '0');             // false
         console.log(0 == '');               // true
         console.log(0 == '0');              // true
@@ -19,9 +21,11 @@ Reveal.addEventListener('exec-0', function () {
         console.log(null == undefined);     // true
 
         console.log(' \t\r\n ' == 0);       // true
+
+        /* jshint ignore:end */
         console.groupEnd();
 
-        ran['example-0'] = true;
+        ran.firstExample = true;
     }
 
 }, false);
