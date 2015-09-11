@@ -16,12 +16,11 @@
         width         : 96%;
 
         &.pros, &.cons {
-            font-size   : 0.75em;
-            font-weight : 100;
-
             li {
-                padding       : 4px 8px;
+                padding       : 2px 8px;
                 margin        : 0;
+                font-size     : 0.64em;
+                font-weight   : 100;
                 border-bottom : 1px solid rgba(palette(White), 0.16);
 
                 &:first-child, &:last-child {
@@ -31,6 +30,7 @@
 
                 &:first-child {
                     background-color : transparent;
+                    font-size        : 0.8em;
                     font-weight      : 900;
                 }
 
