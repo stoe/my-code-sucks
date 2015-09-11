@@ -65,7 +65,7 @@ module.exports = (grunt) ->
 
         jshint:
             options:
-                jshintrc: '.jshintrc'
+                jshintrc: 'jshint.json'
 
             all: ['js/*.js']
 
