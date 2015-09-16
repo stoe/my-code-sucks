@@ -1,5 +1,8 @@
 # Generated on 2015-09-03 using generator-reveal 0.5.2
 module.exports = (grunt) ->
+
+    pkg = grunt.file.readJSON('package.json')
+
     grunt.initConfig
 
         watch:
@@ -90,11 +93,12 @@ module.exports = (grunt) ->
 
 
         buildcontrol:
+
             options:
                 dir: 'dist'
                 commit: true
                 push: true
-                message: 'Built from %sourceCommit% on branch %sourceBranch%'
+                message: 'Update to v' + pkg.version + ' (%sourceCommit% on %sourceBranch%)'
             pages:
                 options:
                     remote: 'git@github.com:stoe/my-code-sucks.git'
