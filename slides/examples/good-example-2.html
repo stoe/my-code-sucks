@@ -1,0 +1,19 @@
+<pre><code data-trim class="javascript hljs">
+var loremipsum = $('.loremipsum'), 
+    num        = 20000, 
+    i;
+
+  for (i = 1; num >= i; i++) {
+    loremipsum.html(i); 
+    loremipsum.width(parseInt(i / num * 100, 10) + '%'); 
+}
+</code></pre>
+
+<pre class="fragment min-margin"><code data-trim class="javascript hljs">
+// $('.loremipsum') is called one time only
+</code></pre>
+
+
+<aside class="notes">
+    // TODO
+</aside>
